@@ -1,11 +1,9 @@
 require 'pry'
-require 'byebug'
 
 def zeroSubArray array, sum
   counterHash = {}
   current_sum = 0
   array.each_with_index do |item, index|
-    # byebug
     current_sum += item
     if current_sum == sum
       puts "Sum found between indexes 0 and #{index}"
