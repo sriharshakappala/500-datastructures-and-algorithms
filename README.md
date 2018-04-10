@@ -8,6 +8,8 @@ An attempt to solve 500 of data structure problems
 5. Producer Consumer
 6. Channel Traversal problem
 7. Rod Cutting
+8. Level order Tree Traversal
+9. In, Pre and Post order Tree Traversal
 
 ## Learnings
 * Mutex
@@ -28,3 +30,4 @@ An attempt to solve 500 of data structure problems
 * When to go with synchronous / asynchronous languages?
 * When to go with SQL / NOSQL datastores?
 * Scale application server
+* Tree Traversals - Inorder, Preorder, Postorder, Levelorder
