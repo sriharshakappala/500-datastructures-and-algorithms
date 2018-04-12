@@ -39,5 +39,6 @@ def mergeSort array, low, high
   end
 end
 
-array = [5, 1, 2, 6, 3, 0]
+array = [5, 1, 2, 6, 3, 0, 17, 11, 12, 9]
 mergeSort array, 0, (array.length - 1)
+puts array
