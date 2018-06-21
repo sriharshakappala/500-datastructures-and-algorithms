@@ -51,3 +51,34 @@ An attempt to solve 500 of data structure problems
 * http://www.oodesign.com/
 * HTTP2 - Multiplexing, Streaming, Header Compression, Default SSL
 * Stored Procedures
+* Stack vs Heap
+* Closures in JS
+* Functional Programming Language - Supports Higher Order Functions
+* JS treats functions as first class citizens (like variables) - First Class Functions
+* Branch Prediction - https://www.quora.com/What-is-branch-prediction-in-the-context-of-CPUs
+* Eventual vs Strong / Immediate Consistency
+* Go routines, Channels, Buffered Channels, Waitgroups
+* Structs instead of classes in golang
+* Concurrency, Ease of deployment with Go
+* Datatypes in Redis
+* Analyzers and Tokenizers in Elasticsearch
+* Callback queues - Single or Multiple threads
+* Dynamic Memory Allocation / Manual Memory Management - malloc, dealloc (optional GC like C language)
+* Declarative vs Imperative
+* Functional Languages
+1. Functions can't change their inputs
+2. Can't change any variables (Immutable)
+3. Loops cannot be present (as we increment counter variables)
+* method_missing in Ruby
+
+## Some items to explore
+* what is mock in unit testing
+* modules and classes
+* how sidekiq works
+* sidekiq parallel threads
+* nodejs and rails
+* when to go with programming language
+* what can u do in psql that u cannot do in mongo
+* how to call a method in various ways
+* procs blocks lambda
+* nlogn or n^2 if space is not constaint - all integers
