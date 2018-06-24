@@ -9,6 +9,7 @@ struct node {
   struct node *right;
 };
 
+// Root, Left, Right
 void printPreorder(node *root) {
   if (root == NULL) return;
   cout << root->data << " ";
@@ -16,6 +17,7 @@ void printPreorder(node *root) {
   printPreorder(root->right);
 }
 
+// Left, Root, Right
 void printInorder(node *root) {
   if (root == NULL) return;
   printInorder(root->left);
@@ -23,6 +25,7 @@ void printInorder(node *root) {
   printInorder(root->right);
 }
 
+// Left, Right, Root
 void printPostorder(node *root) {
   if (root == NULL) return;
   printPostorder(root->left);
