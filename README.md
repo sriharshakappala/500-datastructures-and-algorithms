@@ -66,13 +66,18 @@ An attempt to solve 500 of data structure problems
 * Dynamic Memory Allocation / Manual Memory Management - malloc, dealloc (optional GC like C language)
 * Declarative vs Imperative
 * Functional Languages
-1. Functions can't change their inputs
-2. Can't change any variables (Immutable)
-3. Loops cannot be present (as we increment counter variables)
+  1. Functions can't change their inputs
+  2. Can't change any variables (Immutable)
+  3. Loops cannot be present (as we increment counter variables)
 * method_missing in Ruby
+* In one line, array of integers - multiply with random number and put the original numbers in a hash with even and odd as keys (Use inject method)
+* load vs require vs require_relative
+* public, private, protected - protected can be called by the instance of the class and any other instance of the class as well - https://www.youtube.com/watch?v=s1wG678R7ok
+* Lazy Instantiation - Rails
 
 ## Some items to explore
-* what is mock in unit testing
+* what is mock in unit testing - https://www.youtube.com/watch?v=YUcxik0PnWY (by mock testing we can bypass some code block and make it always return true, basically whenever you mock it just doesn;t run that particular block of code)
+* Mocking - Specify which functions you want to bypass
 * modules and classes
 * how sidekiq works
 * sidekiq parallel threads
@@ -82,3 +87,47 @@ An attempt to solve 500 of data structure problems
 * how to call a method in various ways
 * procs blocks lambda
 * nlogn or n^2 if space is not constaint - all integers
+
+## Javascript
+* Error first callbacks
+* Callback hell - control flow library, like async : async await : generators with Promises
+* XSS
+* Timing attack
+* undefined and not defined
+* Hoisting
+```js
+var Employee = function (name, company, salary) {
+  this.name = name || "";       //Public attribute default value is null
+  this.company = company || ""; //Public attribute default value is null
+  this.salary = salary || 5000; //Public attribute default value is null
+  // Private method
+  var increaseSalary = function () {
+    this.salary = this.salary + 1000;
+  };
+  // Public method
+  this.dispalyIncreasedSalary = function() {
+    increaseSlary();
+    console.log(this.salary);
+  };
+};
+// Create Employee class object
+var emp1 = new Employee("John","Pluto",3000);
+// Create Employee class object
+var emp2 = new Employee("Merry","Pluto",2000);
+// Create Employee class object
+var emp3 = new Employee("Ren","Pluto",2500);
+```
+* local and global execution context - closures, lexical scope
+```js
+let val = 7
+function createAdder() {
+  function addNumbers(a, b) {
+    let ret = a + b
+    return ret
+  }
+  return addNumbers
+}
+let adder = createAdder()
+let sum = adder(val, 8)
+console.log('example of function returning a function: ', sum)
+```
