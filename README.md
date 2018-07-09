@@ -74,6 +74,7 @@ An attempt to solve 500 of data structure problems
 * load vs require vs require_relative
 * public, private, protected - protected can be called by the instance of the class and any other instance of the class as well - https://www.youtube.com/watch?v=s1wG678R7ok
 * Lazy Instantiation - Rails
+* HTTP Headers - Cookie, SetCookie, Accept, Accept-Charset, Authentication, Authorization, Accept-Encoding, Connection, Keep-Alive, Connection, Keep-Alive
 
 ## Some items to explore
 * what is mock in unit testing - https://www.youtube.com/watch?v=YUcxik0PnWY (by mock testing we can bypass some code block and make it always return true, basically whenever you mock it just doesn;t run that particular block of code)
