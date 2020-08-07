@@ -162,3 +162,7 @@ var size16 = makeSizer(16);
 3. Proper instance type
 4. Disable the _all field
 5. Reduce response size
+
+* Data Partitioning
+1. Fixed number of partitions: Decide on the number of partitions. Number of partitions can be greater than number of nodes(N). Each node will contain a number of partitions. As a node is removed or added, some of existing partitions can move to new node.
+2. 
