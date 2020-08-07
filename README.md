@@ -132,3 +132,32 @@ let adder = createAdder()
 let sum = adder(val, 8)
 console.log('example of function returning a function: ', sum)
 ```
+
+
+Hashing Strategy
+-- The hash value of the data’s key is used to find out the partition. A good hash function can distribute data uniformly across multiple partitions.
+
+JWT
+Header, Data, Signature
+Libraries - jsonwebtoken, jsonwebtoken
+
+Transposing Matrix - Make columns as rows and rows as columns
+
+(epoch_time - number_of_seconds) gives us eooch time 10 seconds ago
+
+Min Heap - Min Element on top of the heap
+Max Heap - Max Element on top of the heap
+Time Complexity for rearranging a node in Heap - O(log k), where k is number of nodes in Heap
+Closures - for creating dynamic functions
+
+```js
+function makeSizer(size) {
+  return function() {
+    document.body.style.fontSize = size + 'px';
+  };
+}
+
+var size12 = makeSizer(12);
+var size14 = makeSizer(14);
+var size16 = makeSizer(16);
+```
