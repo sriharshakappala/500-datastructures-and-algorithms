@@ -134,21 +134,15 @@ console.log('example of function returning a function: ', sum)
 ```
 
 
-Hashing Strategy
--- The hash value of the data’s key is used to find out the partition. A good hash function can distribute data uniformly across multiple partitions.
-
-JWT
-Header, Data, Signature
-Libraries - jsonwebtoken, jsonwebtoken
-
-Transposing Matrix - Make columns as rows and rows as columns
-
-(epoch_time - number_of_seconds) gives us eooch time 10 seconds ago
-
-Min Heap - Min Element on top of the heap
-Max Heap - Max Element on top of the heap
-Time Complexity for rearranging a node in Heap - O(log k), where k is number of nodes in Heap
-Closures - for creating dynamic functions
+* Hashing Strategy - The hash value of the data’s key is used to find out the partition. A good hash function can distribute data uniformly across multiple partitions.
+* JWT - Header, Data, Signature
+* Libraries - jsonwebtoken, jsonwebtoken
+* Transposing Matrix - Make columns as rows and rows as columns
+* (epoch_time - number_of_seconds) gives us eooch time 10 seconds ago
+* Min Heap - Min Element on top of the heap
+* Max Heap - Max Element on top of the heap
+* Time Complexity for rearranging a node in Heap - O(log k), where k is number of nodes in Heap
+* Closures - for creating dynamic functions
 
 ```js
 function makeSizer(size) {
@@ -162,7 +156,7 @@ var size14 = makeSizer(14);
 var size16 = makeSizer(16);
 ```
 
-Improve Elasticsearch Performance
+* Improve Elasticsearch Performance
 1. Increase refresh_interval to 60 seconds or more
 2. Be sure that the shards for the index you're ingesting into are distributed evenly across the data nodes. Use the following formula to confirm that the shards are distributed evenly: Number of shards for index = k * (number of data nodes), where k is the number of shards per node
 3. Proper instance type
