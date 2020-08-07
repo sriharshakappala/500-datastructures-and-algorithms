@@ -161,3 +161,10 @@ var size12 = makeSizer(12);
 var size14 = makeSizer(14);
 var size16 = makeSizer(16);
 ```
+
+Improve Elasticsearch Performance
+1. Increase refresh_interval to 60 seconds or more
+2. Be sure that the shards for the index you're ingesting into are distributed evenly across the data nodes. Use the following formula to confirm that the shards are distributed evenly: Number of shards for index = k * (number of data nodes), where k is the number of shards per node
+3. Proper instance type
+4. Disable the _all field
+5. Reduce response size
